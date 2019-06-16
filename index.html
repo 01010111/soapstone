@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin=""/>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+		integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+		crossorigin=""></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+</head>
+<body>
+	<div id='map'></div>
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyDXygyTfWdleG7zPLMAzf79nJ11bVtYFOk",
+			authDomain: "soapst0ne.firebaseapp.com",
+			databaseURL: "https://soapst0ne.firebaseio.com",
+			projectId: "soapst0ne",
+			storageBucket: "soapst0ne.appspot.com",
+			messagingSenderId: "93528764833",
+			appId: "1:93528764833:web:0248d27a4dbf6993"
+		};
+		firebase.initializeApp(firebaseConfig);
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>
